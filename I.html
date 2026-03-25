@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irani Chai - Best Cafes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #efebe9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Tea Brown & Biscuit Gold Theme */
+        .header {
+            background: linear-gradient(135deg, #4e342e, #a1887f);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(78, 52, 46, 0.2);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #4e342e;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #d7ccc8;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #3e2723; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #3e2723; }
+
+        .btn-route {
+            background: #5d4037;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+        }
+        .btn-route:hover { background: #3e2723; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Back to Explorer</a>
+    
+    <div class="header">
+        <h1>Legendary Irani Chai Spots</h1>
+        <p>Experience the soul of Hyderabad with creamy chai and buttery biscuits</p>
+    </div>
+
+    <div class="res-card" data-open="5" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Nimrah Cafe & Bakery</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 5:00 AM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Next to Charminar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Fresh Osmania biscuits with a stunning view of Charminar.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Nimrah+Cafe+and+Bakery+Hyderabad" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="5" data-close="25">
+        <div class="res-header">
+            <h2 class="res-name">Cafe Niloufer</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 5:00 AM - 1:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Red Hills, Lakdikapul</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for its premium "Malai Chai" and soft Maska Bun.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Cafe+Niloufer+Lakdikapul+Hyderabad" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="6" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Garden Restaurant</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:00 AM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Near Clock Tower, Secunderabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> Old-school Irani Chai experience with a loyal local crowd.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Garden+Restaurant+Secunderabad+Hyderabad" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="25">
+        <div class="res-header">
+            <h2 class="res-name">Grand Hotel</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 1:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Abids Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> Heritage ambiance and consistently perfect tea consistency.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Grand+Hotel+Abids+Hyderabad" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="24.75">
+        <div class="res-header">
+            <h2 class="res-name">Pista House</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 12:45 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Shah Ali Banda, Old City</div>
+        <div class="info-row">✨ <b>Specialty:</b> A wide variety of biscuits and strong Zafrani Chai.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Pista+House+Charminar+Hyderabad" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+</div>
+
+<script>
+    function updateChaiStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            let isOpen = false;
+            if (closeTime > 24) {
+                 isOpen = (currentHour >= openTime || currentHour < (closeTime - 24));
+            } else {
+                 isOpen = (currentHour >= openTime && currentHour < closeTime);
+            }
+
+            if (isOpen) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+
+    window.onload = updateChaiStatus;
+    setInterval(updateChaiStatus, 60000);
+</script>
+
+</body>
+</html>

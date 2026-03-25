@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Cutting Chai Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #efebe9; /* Light milky-brown background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Ginger Tea & Clay Pot Theme */
+        .header {
+            background: linear-gradient(135deg, #795548, #d7ccc8);
+            color: #3e2723;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(121, 85, 72, 0.3);
+            border-bottom: 5px solid #5d4037;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #5d4037;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #d7ccc8;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #3e2723; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #8d6e63; }
+
+        .btn-route {
+            background: #8d6e63;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #5d4037; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="mumbai.html" class="back-link">← Back to Mumbai Explorer</a>
+    
+    <div class="header">
+        <h1>Mumbai Cutting Chai</h1>
+        <p>Strong, ginger-infused tea served in half-glasses—the fuel of Mumbai</p>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="20">
+        <div class="res-header">
+            <h2 class="res-name">Kyani & Co.</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 8:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Marine Lines, South Mumbai</div>
+        <div class="info-row">✨ <b>Specialty:</b> Authentic Irani Chai. Best paired with Bun Maska. This heritage bakery offers the classic old-world Mumbai tea experience.</div>
+        <a href="https://www.google.com/maps/search/Kyani+and+Co+Marine+Lines+Mumbai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Prithvi Cafe</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Juhu, Mumbai</div>
+        <div class="info-row">✨ <b>Specialty:</b> Their "Sulemani Chai" and Ginger Cutting Chai are legendary among the theatre crowd. Very vibrant atmosphere.</div>
+        <a href="https://www.google.com/maps/search/Prithvi+Cafe+Juhu+Mumbai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="5" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Nagori Tea Stall</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 5:00 AM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Various (Common in Byculla/Bhendi Bazaar)</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for their rich, creamy "Nagori" milk tea. It's less about the ginger and more about the quality of high-fat milk.</div>
+        <a href="https://www.google.com/maps/search/Nagori+Tea+Stall+Mumbai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Tea Centre (Resham Bhavan)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Churchgate, Mumbai</div>
+        <div class="info-row">✨ <b>Specialty:</b> For a more sophisticated "cutting." Their Masala Chai is refined but still packs that spicy hit.</div>
+        <a href="https://www.google.com/maps/search/Tea+Centre+Churchgate+Mumbai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const badge = card.querySelector('.status-badge');
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

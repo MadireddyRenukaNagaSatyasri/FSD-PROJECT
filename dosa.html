@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Masala Dosa - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8e1; /* Warm banana-leaf yellowish background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Sambar Orange & Curry Leaf Green Theme */
+        .header {
+            background: linear-gradient(135deg, #e65100, #2e7d32);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(230, 81, 0, 0.2);
+            border-bottom: 5px solid #bf360c;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #c8e6c9;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #1b5e20; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #3e2723; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #e65100; }
+
+        .btn-route {
+            background: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #1b5e20; 
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="chennai.html" class="back-link">← Back to Chennai Explorer</a>
+    
+    <div class="header">
+        <h1>Legendary Chennai Masala Dosa</h1>
+        <p>Crispy golden crepes served with aromatic potato masala, sambar, and fresh chutneys</p>
+    </div>
+
+    <div class="res-card" data-open="6" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Saravana Bhavan</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Mylapore (Original)</div>
+        <div class="info-row">✨ <b>Specialty:</b> The Ghee Paper Roast Masala Dosa is a global benchmark for crispiness.</div>
+        <a href="https://www.google.com/maps/search/Saravana+Bhavan+Mylapore+Chennai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Murugan Idli Shop</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> T. Nagar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for their Ghee Podi Dosa and a variety of unique spicy chutneys.</div>
+        <a href="https://www.google.com/maps/search/Murugan+Idli+Shop+T+Nagar+Chennai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7.5" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Ratna Cafe</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:30 AM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Triplicane</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for the best Sambar in the city; they pour it generously over your Dosa!</div>
+        <a href="https://www.google.com/maps/search/Ratna+Cafe+Triplicane+Chennai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Sangeetha Veg Restaurant</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Adyar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Excellent balance of taste and hygiene, perfect for a classic Onion Masala Dosa.</div>
+        <a href="https://www.google.com/maps/search/Sangeetha+Veg+Restaurant+Adyar+Chennai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

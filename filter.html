@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Filter Coffee - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #efebe9; /* Light coffee-wash background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Dark Roast & Brass Gold Theme */
+        .header {
+            background: linear-gradient(135deg, #3e2723, #a1887f);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(62, 39, 35, 0.3);
+            border-bottom: 5px solid #ffb300; /* Brass accent */
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #3e2723;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #d7ccc8;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #4e342e; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #8d6e63; }
+
+        .btn-route {
+            background: #4e342e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #ffb300; 
+            color: #3e2723;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="chennai.html" class="back-link">← Back to Chennai Explorer</a>
+    
+    <div class="header">
+        <h1>Authentic Filter Kaapi</h1>
+        <p>Strong decoction mixed with frothed milk, served in traditional brass dabarah</p>
+    </div>
+
+    <div class="res-card" data-open="6" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Mylapore Filter Coffee</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Luz Church Road, Mylapore</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for the perfect ratio of Chicory and Peaberry beans. Very aromatic.</div>
+        <a href="https://www.google.com/maps/search/Spice+Court+Jaipur5" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="5.5" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Kumbakonam Degree Coffee</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 5:30 AM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Multiple Locations (OMR/ECR)</div>
+        <div class="info-row">✨ <b>Specialty:</b> Uses "Degree" milk (pure unadulterated milk) for a rich, creamy finish.</div>
+        <a href="https://www.google.com/maps/search/Spice+Court+Jaipur6" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="20">
+        <div class="res-header">
+            <h2 class="res-name">Vivekananda Coffee</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 8:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> T. Nagar</div>
+        <div class="info-row">✨ <b>Specialty:</b> A legendary roastery. You can buy fresh grounds here or enjoy a quick cup.</div>
+        <a href="https://www.google.com/maps/contrib/104111788468489941239/reviews" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Madras Coffee House</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Alwarpet / Egmore</div>
+        <div class="info-row">✨ <b>Specialty:</b> Excellent "standing coffee" spots perfect for a quick morning reboot.</div>
+        <a href="https://www.google.com/maps/search/Spice+Court+Jaipur8" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amritsar Food Explorer</title>
+    <style>
+        /* Consistent Theme Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff4e6; /* Warm Punjabi Golden background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cont {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; 
+            margin-bottom: 30px;
+        }
+
+        .card {
+            width: 300px;
+            height: 480px; 
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+            background-color: white;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #f39c12; /* Golden/Saffron Border */
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; 
+        }
+
+        .small h1 {
+            font-size: 22px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #d35400; /* Deep Orange */
+        }
+
+        .small p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 10px 15px;
+            text-align: justify;
+            color: #2c3e50;
+            height: 80px; 
+            overflow: hidden;
+        }
+
+        .small button {
+            background-color: #27ae60;
+            display: block;
+            margin: 10px auto; 
+            color: white;
+            width: 140px;
+            padding: 8px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .small button:hover {
+            background-color: #219150;
+        }
+
+        .city-header {
+            text-align: center;
+            color: #c0392b;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="city-header">Taste the Spirit of Punjab: Amritsar</h1>
+
+    <div class="cont">
+        <div class="card">
+            <img src="amritsari_kulcha.webp" alt="Amritsari Kulcha">
+            <div class="small">
+                <h1>Amritsari Kulcha</h1>
+                <p>Crispy, layered flatbread stuffed with spiced potatoes and baked in a tandoor. It's served with a dollop of butter, chole, and tangy chutney.</p>
+              <button onclick="window.location.href='kul.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="dal_makhani.jpg" alt="Dal Makhani">
+            <div class="small">
+                <h1>Dal Makhani</h1>
+                <p>A rich, creamy lentil dish slow-cooked overnight with butter and cream. It is the heart of every Punjabi meal and famous at Kesar Da Dhaba.</p>
+                <button onclick="window.location.href='mak.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="lassi.webp" alt="Amritsari Lassi">
+            <div class="small">
+                <h1>Amritsari Lassi</h1>
+                <p>A thick, frothy yogurt drink served in large steel tumblers, often topped with a thick layer of malai (cream). It is the ultimate Punjabi refresher.</p>
+              <button onclick="window.location.href='la.html'">View Details</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="card">
+            <img src="amritsari_fish.webp" alt="Amritsari Fish">
+            <div class="small">
+                <h1>Amritsari Fish</h1>
+                <p>Fresh river fish coated in a spicy gram flour batter and deep-fried to golden perfection. It is a crispy and juicy world-famous snack.</p>
+              <button onclick="window.location.href='fish.html'">View Details</button>  
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="sarson_saag.webp" alt="Sarson Da Saag">
+            <div class="small">
+                <h1>Sarson Da Saag</h1>
+                <p>A traditional winter delicacy made from mustard greens and spices, traditionally served with 'Makki di Roti' and white butter.</p>
+             <button onclick="window.location.href='saagpgg.html'">View Details</button>  
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="phirni.webp" alt="Phirni">
+            <div class="small">
+                <h1>Phirni</h1>
+                <p>A creamy ground rice pudding flavored with saffron and cardamom, served chilled in traditional clay pots (matkas) for an authentic taste.</p>
+                <button onclick="window.location.href='phi.html'">View Details</button>  
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

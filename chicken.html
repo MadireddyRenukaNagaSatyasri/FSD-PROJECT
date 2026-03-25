@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai Chicken 65 - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f5; /* Very faint red tint */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Fiery Red & Deep Charcoal Theme */
+        .header {
+            background: linear-gradient(135deg, #b71c1c, #212121);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(183, 28, 28, 0.3);
+            border-bottom: 5px solid #ff5252;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #b71c1c;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffcdd2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #b71c1c; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #424242; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #d32f2f; }
+
+        .btn-route {
+            background: #b71c1c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #212121; 
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="chennai.html" class="back-link">← Back to Chennai Explorer</a>
+    
+    <div class="header">
+        <h1>Original Chennai Chicken 65</h1>
+        <p>Spicy, deep-fried chicken tempered with curry leaves and green chilies</p>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23.5">
+        <div class="res-header">
+            <h2 class="res-name">Buhari Hotel</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 11:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Anna Salai (Mount Road)</div>
+        <div class="info-row">✨ <b>Specialty:</b> The birthplace of the dish. They still use the original 1965 recipe.</div>
+        <a href="https://www.google.com/maps/search/Spice+Court+Jaipur9" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11.5" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Anjappar Chettinad</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:30 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> T. Nagar / Nungambakkam</div>
+        <div class="info-row">✨ <b>Specialty:</b> A spicier, Chettinad-style version with a heavy punch of pepper.</div>
+        <a href="https://www.google.com/maps/search/Niros+Restaurant+Jaipur0" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Junior Kupanna</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Velachery / Adyar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for using tender 'Nattu Kozhi' (country chicken) for a unique texture.</div>
+        <a href="https://www.google.com/maps/search/Niros+Restaurant+Jaipur1" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Ponnusamy Hotel</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Egmore</div>
+        <div class="info-row">✨ <b>Specialty:</b> Authentic flavors and perfectly juicy meat inside a crispy shell.</div>
+        <a href="https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21vdFkwSndVa0ZmTlY5MWNFeFlkWGRyUTIxMFJuYxAB!2m1!1s0x396db5e165469f4d:0xd4dba5eda48e058f" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

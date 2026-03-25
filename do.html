@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Ka Meetha - Best Desserts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffaf0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Royal Purple & Creamy Saffron Theme */
+        .header {
+            background: linear-gradient(135deg, #6a1b9a, #d4a017);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(106, 27, 154, 0.2);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #6a1b9a;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #4a148c; font-size: 22px; }
+
+        /* The Status Badge Logic */
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #444; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #222; }
+
+        .btn-route {
+            background: #8e24aa;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+        }
+        .btn-route:hover { background: #6a1b9a; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Back to Explorer</a>
+    
+    <div class="header">
+        <h1>Best Double Ka Meetha in Hyderabad</h1>
+        <p>Royal bread pudding soaked in saffron milk, ghee, and love</p>
+    </div>
+
+    <div class="res-card" data-open="10" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Hameedi Confectioners</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 10:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Mozamjahi Market, Hyderabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> The original "Jouzi Halwa" and legendary Double Ka Meetha.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="5" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Hotel Shadab</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 5:00 AM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Ghansi Bazaar, Near Charminar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Extremely rich, soft texture with loads of khoya.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="26">
+        <div class="res-header">
+            <h2 class="res-name">Shah Ghouse</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 2:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Tolichowki, Hyderabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for late-night dessert cravings after Biryani.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23.5">
+        <div class="res-header">
+            <h2 class="res-name">Pista House</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 11:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Charminar / Gachibowli</div>
+        <div class="info-row">✨ <b>Specialty:</b> Perfectly balanced sweetness and garnished with nuts.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+    <div class="res-card" data-open="9" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Subhan Bakery</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 9:00 AM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Nampally, Hyderabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> Offers a more "bakery-style" consistent sweetness and quality.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 Show Route</a>
+    </div>
+
+</div>
+
+<script>
+    function updateMeethaStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            let isOpen = false;
+            // Handle late night closing (e.g., 2 AM is 26)
+            if (closeTime > 24) {
+                 isOpen = (currentHour >= openTime || currentHour < (closeTime - 24));
+            } else {
+                 isOpen = (currentHour >= openTime && currentHour < closeTime);
+            }
+
+            if (isOpen) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+
+    window.onload = updateMeethaStatus;
+    // Update every minute automatically
+    setInterval(updateMeethaStatus, 60000);
+</script>
+
+</body>
+</html>

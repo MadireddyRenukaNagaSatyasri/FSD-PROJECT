@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Butter Chicken - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f0; /* Creamy white background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Rich Tomato Red & Butter Gold */
+        .header {
+            background: linear-gradient(135deg, #d32f2f, #ff9800);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(211, 47, 47, 0.2);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #b71c1c;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffccbc;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #b71c1c; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #4e342e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #d32f2f; }
+
+        .btn-route {
+            background: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { background: #b71c1c; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="delhi.html" class="back-link">← Back to Delhi Explorer</a>
+    
+    <div class="header">
+        <h1>Iconic Butter Chicken</h1>
+        <p>Tender tandoori chicken in a silky, buttery tomato gravy</p>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Moti Mahal</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Daryaganj</div>
+        <div class="info-row">✨ <b>Specialty:</b> The birthplace of Butter Chicken in the 1950s.</div>
+        <a href="https://www.google.com/maps/search/Moti+Mahal+Daryaganj+Delhi" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Gulati Restaurant</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Pandara Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for the richest, most velvety gravy in Delhi.</div>
+        <a href="https://www.google.com/maps/search/Gulati+Restaurant+Pandara+Road+Delhi" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Havemore</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Pandara Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> A legendary rival to Gulati, famous for smokier tandoori flavors.</div>
+        <a href="https://www.google.com/maps/search/Havemore+Restaurant+Pandara+Road+Delhi" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="16" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Rajinder Da Dhaba</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 4:00 PM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Safdarjung Enclave</div>
+        <div class="info-row">✨ <b>Specialty:</b> Best for a rustic, dhaba-style spicy Butter Chicken.</div>
+        <a href="https://www.google.com/maps/search/Rajinder+Da+Dhaba+Safdarjung+Enclave+Delhi" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="16" data-close="25">
+        <div class="res-header">
+            <h2 class="res-name">Aslam Chicken</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 4:00 PM - 1:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Jama Masjid, Old Delhi</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for "Butter Chicken" literally swimming in melted butter.</div>
+        <a href="https://www.google.com/maps/search/Aslam+Chicken+Jama+Masjid+Delhi" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            let isOpen = false;
+            // Handle late night hours (e.g., 1 AM is 25)
+            if (closeTime > 24) {
+                 isOpen = (currentHour >= openTime || currentHour < (closeTime - 24));
+            } else {
+                 isOpen = (currentHour >= openTime && currentHour < closeTime);
+            }
+
+            if (isOpen) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

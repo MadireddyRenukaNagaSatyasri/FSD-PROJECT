@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Chole Bhature - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff9c4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        .header {
+            background: linear-gradient(135deg, #f57c00, #2e7d32);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(245, 124, 0, 0.2);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #ef6c00;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe0b2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #e65100; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #4e342e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #2e7d32; }
+
+        .btn-route {
+            background: #f57c00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="delhi.html" class="back-link">← Back to Delhi Explorer</a>
+    
+    <div class="header">
+        <h1>Legendary Chole Bhature</h1>
+        <p>The ultimate Delhi breakfast: Spicy chickpeas and fluffy deep-fried bread</p>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="18">
+        <div class="res-header">
+            <h2 class="res-name">Sita Ram Diwan Chand</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 6:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Paharganj</div>
+        <div class="info-row">✨ <b>Specialty:</b> Signature paneer-stuffed bhature.</div>
+        <a href="https://maps.google.com/?cid=1599496575471505186&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="9.5" data-close="15">
+        <div class="res-header">
+            <h2 class="res-name">Chache Di Hatti</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 9:30 AM - 3:00 PM (Closed Sundays)</div>
+        <div class="info-row">📍 <b>Location:</b> Kamla Nagar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for stuffed aloo bhature.</div>
+        <a href="https://maps.google.com/?cid=17253851232368408831&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7.5" data-close="15">
+        <div class="res-header">
+            <h2 class="res-name">Baba Nagpal Corner</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:30 AM - 3:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Lajpat Nagar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for extra spicy chole and consistency.</div>
+        <a href="https://maps.google.com/?cid=6552626393633085172&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="17">
+        <div class="res-header">
+            <h2 class="res-name">Om Corner</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 5:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Karol Bagh</div>
+        <div class="info-row">✨ <b>Specialty:</b> Punjabi style chole with a punch of ginger.</div>
+        <a href="https://maps.google.com/?cid=5173158365165565441&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8.5" data-close="17.5">
+        <div class="res-header">
+            <h2 class="res-name">Civil Line Wala</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:30 AM - 5:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Civil Lines, Gurugram</div>
+        <div class="info-row)✨ <b>Specialty:</b> Served with delicious sweet lassi.</div>
+        <a href="https://maps.google.com/?cid=12515503261453551105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateCBStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateCBStatus;
+</script>
+
+</body>
+</html>

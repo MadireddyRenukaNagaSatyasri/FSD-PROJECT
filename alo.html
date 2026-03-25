@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolkata Aloo Kabli Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffde7; /* Soft potato-yellow background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Tangy Tamarind & Cumin Theme */
+        .header {
+            background: linear-gradient(135deg, #795548, #afb42b);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(121, 85, 72, 0.3);
+            border-bottom: 5px solid #5d4037;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #5d4037;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #33691e; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #4e342e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #afb42b; }
+
+        .btn-route {
+            background: #afb42b;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #827717; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="kolkata.html" class="back-link">← Back to Kolkata Guide</a>
+    
+    <div class="header">
+        <h1>Kolkata Aloo Kabli</h1>
+        <p>The ultimate street snack: Diced potatoes, boiled chickpeas, and tamarind pulp mixed with 'Bhaja Masala'</p>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="20.5">
+        <div class="res-header">
+            <h2 class="res-name">Vardaan Market Chat Stall</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 8:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Camac Street, Kolkata</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for its perfectly balanced spice levels. Their 'Aloo Kabli' is a must-try for anyone shopping in the area.</div>
+        <a href="https://www.google.com/maps/search/Vardaan+Market+Kolkata+Chat" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="15" data-close="20">
+        <div class="res-header">
+            <h2 class="res-name">Dakshinapan Chaat Center</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 3:00 PM - 8:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Dhakuria, South Kolkata</div>
+        <div class="info-row">✨ <b>Specialty:</b> Their potato-mix is extra zesty. Usually paired with a cold glass of 'Gondhoraj Lebu' juice nearby.</div>
+        <a href="https://www.google.com/maps/search/Dakshinapan+Shopping+Center+Puchka" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">New Market Street Chat</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Dharmatala, Central Kolkata</div>
+        <div class="info-row">✨ <b>Specialty:</b> A classic old-school mix. They use plenty of boiled yellow peas (ghugni style) and fresh coconut shavings.</div>
+        <a href="https://www.google.com/maps/search/New+Market+Kolkata+Street+Food" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const badge = card.querySelector('.status-badge');
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

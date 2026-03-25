@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabadi Haleem - Best Outlets</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf5e6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header Section - Earthy Brown & Gold Theme */
+        .header {
+            background: linear-gradient(135deg, #5d4037, #8d6e63);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(93, 64, 55, 0.2);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #5d4037;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        /* Restaurant Card */
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .res-name { margin: 0; color: #3e2723; font-size: 24px; }
+
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 15px; color: #5d4037; margin: 5px 0; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #3e2723; }
+        .info-icon { width: 20px; text-align: center; font-size: 16px; }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-route {
+            background: #795548;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { background: #5d4037; transform: translateY(-2px); }
+
+        .icon { font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Back to Explorer</a>
+    
+    <div class="header">
+        <h1>Authentic Hyderabadi Haleem</h1>
+        <p>A GI-tagged delicacy made with meat, wheat, and pure ghee, slow-cooked for 12 hours</p>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Pista House</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Charminar / Jubilee Hills</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹400 - ₹600</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> World-famous export-quality Haleem</div>
+        <div class="button-group">
+            <a href="https://www.google.com/maps" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="12.5" data-close="23.5">
+        <div class="res-header">
+            <h2 class="res-name">Sarvi Restaurant</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 12:30 PM - 11:30 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Banjara Hills, Road No. 11</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹500 - ₹700</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Known for silky texture and balanced spices</div>
+        <div class="button-group">
+            <a href="https://www.google.com/maps" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="16" data-close="25">
+        <div class="res-header">
+            <h2 class="res-name">Cafe 555</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 4:00 PM - 1:00 AM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Masab Tank, Hyderabad</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹400 - ₹600</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Topped with Chicken 65 and Zaffran</div>
+        <div class="button-group">
+            <a href="https://www.google.com/maps" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function updateHaleemStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        const cards = document.querySelectorAll('.res-card');
+
+        cards.forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            let isCurrentlyOpen = false;
+            // Handle post-midnight closing
+            if (closeTime > 24) {
+                 isCurrentlyOpen = (currentHour >= openTime || currentHour < (closeTime - 24));
+            } else {
+                 isCurrentlyOpen = (currentHour >= openTime && currentHour < closeTime);
+            }
+
+            if (isCurrentlyOpen) {
+                badge.textContent = "Open Now";
+                badge.classList.remove('closed');
+                badge.classList.add('open');
+            } else {
+                badge.textContent = "Closed Now";
+                badge.classList.remove('open');
+                badge.classList.add('closed');
+            }
+        });
+    }
+
+    window.onload = updateHaleemStatus;
+    setInterval(updateHaleemStatus, 60000);
+</script>
+
+</body>
+</html>

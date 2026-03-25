@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chennai Food Explorer</title>
+    <style>
+        /* Consistent Theme Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8; /* Fresh coastal background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cont {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; 
+            margin-bottom: 30px;
+        }
+
+        .card {
+            width: 300px;
+            height: 480px; 
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+            background-color: white;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #2980b9; /* Coastal Blue */
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; 
+        }
+
+        .small h1 {
+            font-size: 22px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #27ae60; /* Fresh Green */
+        }
+
+        .small p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 10px 15px;
+            text-align: justify;
+            color: #2c3e50;
+            height: 80px; 
+            overflow: hidden;
+        }
+
+        .small button {
+            background-color: #e67e22; /* Coffee Orange */
+            display: block;
+            margin: 10px auto; 
+            color: white;
+            width: 140px;
+            padding: 8px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .small button:hover {
+            background-color: #d35400;
+        }
+
+        .city-header {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="city-header">Discover the Soul of South India: Chennai</h1>
+
+    <div class="cont">
+        <div class="card">
+            <img src="masala_dosa.webp" alt="Masala Dosa">
+            <div class="small">
+                <h1>Masala Dosa</h1>
+                <p>A thin, crispy fermented rice crepe filled with a savory potato mash. Served with fresh coconut chutney and hot sambar, it is the king of Chennai tiffins.</p>
+                <button onclick="window.location.href='dosa.html'">View Details</button> 
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="idli_sambar.webp" alt="Idli Sambar">
+            <div class="small">
+                <h1>Idli Sambar</h1>
+                <p>Soft, fluffy steamed rice cakes served with a flavorful lentil-based vegetable stew. This is considered one of the healthiest breakfasts in the world.</p>
+                 <button onclick="window.location.href='idli.html'">View Details</button> 
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="filter_coffee.jpg" alt="Filter Coffee">
+            <div class="small">
+                <h1>Filter Coffee</h1>
+                <p>A strong, milky coffee brewed in a traditional metal filter and served frothy in a stainless steel 'Dabarah'. It is the aromatic heart of Chennai.</p>
+              <button onclick="window.location.href='filter.html'">View Details</button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="card">
+            <img src="chicken_65.jpg" alt="Chicken 65">
+            <div class="small">
+                <h1>Chicken 65</h1>
+                <p>A spicy, deep-fried chicken dish originating from the famous Buhari Hotel in Chennai. It is flavored with curry leaves, ginger, and garlic.</p>
+                <button onclick="window.location.href='chicken.html'">View Details</button> 
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="medu_vada.webp" alt="Medu Vada">
+            <div class="small">
+                <h1>Medu Vada</h1>
+                <p>Crispy on the outside and soft on the inside, these savory donut-shaped lentil fritters are best enjoyed when dipped in hot sambar.</p>
+              <button onclick="window.location.href='medu.html'">View Details</button> 
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="biryani_chennai.jpg" alt="Ambur Biryani">
+            <div class="small">
+                <h1>Ambur Biryani</h1>
+                <p>A unique style of biryani popular in Chennai, made with Seeraga Samba rice and tender meat, offering a distinct aroma and mild spice level.</p>
+                <button onclick="window.location.href='abur.html'">View Details</button> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

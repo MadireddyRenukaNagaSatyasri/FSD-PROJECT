@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritsari Fish - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8; /* Light ocean mist background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Deep Sea Blue & Golden Fry Theme */
+        .header {
+            background: linear-gradient(135deg, #01579b, #ffb300);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(1, 87, 155, 0.2);
+            border-bottom: 5px solid #002f6c;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #01579b;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #bbdefb;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #01579b; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #37474f; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #ff8f00; }
+
+        .btn-route {
+            background: #0277bd;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #01579b; 
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(1, 87, 155, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="amritsar.html" class="back-link">← Back to Amritsar Explorer</a>
+    
+    <div class="header">
+        <h1>Crispy Amritsari Fish</h1>
+        <p>Batter-fried river fish infused with carom seeds (Ajwain) and secret spices</p>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="23.5">
+        <div class="res-header">
+            <h2 class="res-name">Makhan Fish & Chicken Corner</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 11:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Majitha Road, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> The gold standard. Their 'Sangara' and 'Sole' fish fry is a culinary legend.</div>
+        <a href="https://www.google.com/maps/search/Makhan+Fish+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="12.5" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Beera Chicken House</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:30 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Majitha Road, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for succulent, tandoori preparations and perfectly fried fish fillets.</div>
+        <a href="https://www.google.com/maps/search/Beera+Chicken+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Bubby Fish & Chicken Corner</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Cooper Road, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for their spice-heavy marinade and extra crispy batter.</div>
+        <a href="https://www.google.com/maps/search/Bubby+Fish+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="13" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Pehalwan Fish Shop</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 1:00 PM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Hall Bazar Area</div>
+        <div class="info-row">✨ <b>Specialty:</b> A local favorite for fresh catches and authentic street-style fish fry.</div>
+        <a href="https://www.google.com/maps/search/Pehalwan+Fish+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

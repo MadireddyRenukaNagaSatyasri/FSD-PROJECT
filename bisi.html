@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Bisi Bele Bath - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff3e0; /* Warm lentil-soup background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Spicy Masala & Saffron Theme */
+        .header {
+            background: linear-gradient(135deg, #e65100, #ffb300);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(230, 81, 0, 0.3);
+            border-bottom: 5px solid #bf360c;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #e65100;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe0b2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #bf360c; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #4e342e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #e65100; }
+
+        .btn-route {
+            background: #e65100;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #bf360c; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="bengaluru.html" class="back-link">← Back to Bengaluru Explorer</a>
+    
+    <div class="header">
+        <h1>Bengaluru Bisi Bele Bath</h1>
+        <p>A spicy, tangy mix of rice, lentils, and veggies—topped with ghee and boondi</p>
+    </div>
+
+    <div class="res-card" data-open="6.5" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">MTR (Mavalli Tiffin Rooms)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:30 AM - 11:00 AM, 12:30 PM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Lalbagh Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> The gold standard. MTR supposedly invented the modern recipe during WWII. Served with a small cup of pure ghee.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Maiyas</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Jayanagar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for their perfect spice balance and high-quality ingredients. Their "Bath" is consistently rich and piping hot.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Hallimane</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Malleshwaram</div>
+        <div class="info-row">✨ <b>Specialty:</b> Authentic rural Karnataka taste. Their Bisi Bele Bath has a unique, rustic flavor with plenty of vegetables.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7.5" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Veena Stores</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:30 AM - 12:00 PM, 4:00 PM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Malleshwaram</div>
+        <div class="info-row">✨ <b>Specialty:</b> While famous for Idli, their Bisi Bele Bath is a hidden gem—perfectly mushy and served with spicy chutney.</div>
+        <a href="https://maps.google.com" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

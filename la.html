@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritsari Lassi - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e3f2fd; /* Soft sky blue background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Cream White & Frothy Blue Theme */
+        .header {
+            background: linear-gradient(135deg, #1976d2, #64b5f6);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(25, 118, 210, 0.2);
+            border-bottom: 5px solid #0d47a1;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #0d47a1;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #bbdefb;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #1565c0; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #01579b; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #1976d2; }
+
+        .btn-route {
+            background: #1976d2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #0d47a1; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="amritsar.html" class="back-link">← Back to Amritsar Explorer</a>
+    
+    <div class="header">
+        <h1>Iconic Amritsari Lassi</h1>
+        <p>Thick, creamy yogurt churned to perfection and topped with rich Malai</p>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Ahuja Sweets</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> BK Dutt Gate, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for their secret 'natural essence' and the thickest Peda Lassi in the city.</div>
+        <a href="https://www.google.com/maps/search/Ahuja+Sweets+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Gian di Lassi</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Hathi Gate, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> A legendary 100-year-old shop. Their lassi is so thick you need a spoon!</div>
+        <a href="https://www.google.com/maps/search/Gian+di+Lassi+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Kundan Singh Lassi Wale</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Hall Bazar Area</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for authentic, chilled Kesar (Saffron) and Malai Lassi.</div>
+        <a href="https://www.google.com/maps/search/Kundan+Singh+Lassi+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Kanha Sweets</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Lawrence Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> Perfect breakfast pairing: Lassi served with their famous Poori-Aloo.</div>
+        <a href="https://www.google.com/maps/search/Kanha+Sweets+Amritsar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

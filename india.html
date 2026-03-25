@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Interactive City Map</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { height: 100vh; width: 100%; background: #ffffff; }
+
+        /* Custom Lollipop Style */
+        .lollipop-marker {
+            background: #ff4757; /* Lollipop color */
+            border: 2px solid white;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            width: 24px !important;
+            height: 24px !important;
+            cursor: pointer;
+            box-shadow: -2px 2px 10px rgba(0,0,0,0.3);
+            transition: background 0.2s;
+        }
+        .lollipop-marker:hover {
+            background: #2ed573; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // 1. Define India-specific boundaries [South-West, North-East]
+        const indiaBounds = [
+            [6.0, 68.0], 
+            [37.5, 97.5]
+        ];
+
+        // 2. Initialize the map locked to India
+        const map = L.map('map', {
+            maxBounds: indiaBounds,
+            maxBoundsViscosity: 1.0, // Prevents dragging outside India
+            minZoom: 5,
+            zoomControl: true
+        }).setView([22.5937, 78.9629], 5);
+
+        // 3. Add clean map tiles
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // 4. City Data with specific URLs
+        const cities = [
+            { name: "New Delhi", coords: [28.6139, 77.2090], url: "https://en.wikipedia.org/wiki/New_Delhi" },
+            { name: "Mumbai", coords: [19.0760, 72.8777], url: "https://en.wikipedia.org/wiki/Mumbai" },
+            { name: "Bengaluru", coords: [12.9716, 77.5946], url: "https://en.wikipedia.org/wiki/Bangalore" },
+            { name: "Kolkata", coords: [22.5726, 88.3639], url: "https://en.wikipedia.org/wiki/Kolkata" },
+            { name: "Chennai", coords: [13.0827, 80.2707], url: "https://en.wikipedia.org/wiki/Chennai" }
+        ];
+
+        // 5. Custom Marker Icon
+        const lollipopIcon = L.divIcon({
+            className: 'lollipop-marker',
+            iconSize: [24, 24],
+            iconAnchor: [12, 24] // Ensures the tip points to the city
+        });
+
+        // 6. Add markers with Click Event
+        cities.forEach(city => {
+            const marker = L.marker(city.coords, { icon: lollipopIcon }).addTo(map);
+            
+            // Add a tooltip that shows on hover
+            marker.bindTooltip(city.name, { direction: 'top', offset: [0, -20] });
+
+            // Click event to move to another page
+            marker.on('click', function() {
+                window.location.href = city.url; // Use window.open(city.url) to open in new tab
+            });
+        });
+    </script>
+</body>
+</html>

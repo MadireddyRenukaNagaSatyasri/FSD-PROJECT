@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmedabad Fafda Jalebi Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff9c4; /* Bright sunny yellow background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Fafda Yellow & Jalebi Orange Theme */
+        .header {
+            background: linear-gradient(135deg, #fbc02d, #ef6c00);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(239, 108, 0, 0.3);
+            border-bottom: 5px solid #e65100;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #e65100;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe082;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #bf360c; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #e65100; }
+
+        .btn-route {
+            background: #ef6c00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #e65100; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="ahmedabad.html" class="back-link">← Back to Ahmedabad Guide</a>
+    
+    <div class="header">
+        <h1>Fafda Jalebi Special</h1>
+        <p>Crunchy gram flour strips and hot syrup-filled swirls served with papaya sambharo and fried chillies</p>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="20">
+        <div class="res-header">
+            <h2 class="res-name">Chandravilas</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 8:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Gandhi Road, Old City</div>
+        <div class="info-row">✨ <b>Specialty:</b> A 120-year-old legend. Visited by Mahatma Gandhi and Sardar Patel. Their Jalebis are made in pure ghee and are paper-thin and crispy.</div>
+        <a href="https://www.google.com/maps/search/Chandravilas+Gandhi+Road+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7.5" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Oshwal</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:30 AM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Ashram Road, Ahmedabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for the best 'Kadhibhaji' and Fafda in the new city area. Their papaya sambharo is the perfect tang to cut through the fried fafda.</div>
+        <a href="https://www.google.com/maps/search/Oshwal+Ashram+Road+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="6" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Iscon Ganthiya</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:00 AM - 10:00 PM</div>
+        <div class="info-row :">📍 <b>Location:</b> S.G. Highway / Multiple Branches</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for serving piping hot Ganthiya and Fafda throughout the day. A must-visit for breakfast after a morning walk.</div>
+        <a href="https://www.google.com/maps/search/Iscon+Ganthiya+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Hetshree Fafda Jalebi</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Prahlad Nagar / Satellite</div>
+        <div class="info-row">✨ <b>Specialty:</b> A local favorite for the modern suburbs. Their Fafdas are long, yellow, and melt-in-the-mouth soft.</div>
+        <a href="https://www.google.com/maps/search/Hetshree+Fafda+Jalebi+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const badge = card.querySelector('.status-badge');
+            
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

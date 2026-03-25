@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulfi Falooda - Best Restaurants</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff9f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        .header {
+            background: linear-gradient(135deg, #fbc531, #ff7675);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(251, 197, 49, 0.3);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #d63031;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .res-name { margin: 0; color: #2c3e50; font-size: 24px; }
+
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        /* Color styles for the status */
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 15px; color: #555; margin: 5px 0; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #333; }
+        .info-icon { width: 20px; text-align: center; font-size: 16px; }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-route {
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { background: #2980b9; transform: translateY(-2px); }
+
+        .icon { font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="lu.html" class="back-link">← Back to Dishes</a>
+    
+    <div class="header">
+        <h1>Legendary Lucknowi Kulfi</h1>
+        <p>Rich, creamy Kesar Kulfi topped with silky Falooda and rose syrup</p>
+    </div>
+
+    <div class="res-card" data-open="10" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Prakash Ki Kulfi</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 10:00 AM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Fruit Lane, Aminabad Park, Lucknow</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹150 - ₹250</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> The World-Famous Kesar Kulfi Falooda</div>
+        <div class="button-group">
+            <a href="#" target="_blank" class="btn btn-route"><span class="icon">📍</span> Show Route</a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="9" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Chhappan Bhog</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 9:00 AM - 10:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Sadar Bazaar, Cantonment, Lucknow</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹300 - ₹500</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Premium Dry Fruit Kulfi and Malai Kulfi</div>
+        <div class="button-group">
+            <a href="#" target="_blank" class="btn btn-route"><span class="icon">📍</span> Show Route</a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Radhey Lal Premium Sweets</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Aliganj / Chowk, Lucknow</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹200 - ₹400</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Traditional Matka Kulfi and Rabri</div>
+        <div class="button-group">
+            <a href="#" target="_blank" class="btn btn-route"><span class="icon">📍</span> Show Route</a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Moti Mahal</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> No. 7, MG Marg, Hazratganj</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹300 - ₹500</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Classic Malai Falooda and Rose Kulfi</div>
+        <div class="button-group">
+            <a href="#" target="_blank" class="btn btn-route"><span class="icon">📍</span> Show Route</a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="14" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Panditji Ki Kulfi</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 2:00 PM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Near Akbari Gate, Chowk</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹100 - ₹200</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Authentic Old-City style Handmade Kulfi</div>
+        <div class="button-group">
+            <a href="#" target="_blank" class="btn btn-route"><span class="icon">📍</span> Show Route</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        // Get current hour in 24h format (e.g., 22 for 10 PM)
+        const now = new Date();
+        const currentHour = now.getHours();
+        
+        // Select all cards
+        const cards = document.querySelectorAll('.res-card');
+
+        cards.forEach(card => {
+            const openTime = parseInt(card.getAttribute('data-open'));
+            const closeTime = parseInt(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.classList.remove('closed');
+                badge.classList.add('open');
+            } else {
+                badge.textContent = "Closed Now";
+                badge.classList.remove('open');
+                badge.classList.add('closed');
+            }
+        });
+    }
+
+    // Run when the page finishes loading
+    window.onload = updateStatus;
+</script>
+
+</body>
+</html>

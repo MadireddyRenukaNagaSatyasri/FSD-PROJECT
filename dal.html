@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaipur Dal Baati - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff3e0; /* Sandy beige background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Rajasthani Saffron & Terracotta Theme */
+        .header {
+            background: linear-gradient(135deg, #e65100, #ffb300);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(230, 81, 0, 0.3);
+            border-bottom: 5px solid #bf360c;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #bf360c;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe0b2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #bf360c; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #e65100; }
+
+        .btn-route {
+            background: #e65100;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { background: #bf360c; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="jaipur.html" class="back-link">← Back to Jaipur Explorer</a>
+    
+    <div class="header">
+        <h1>Legendary Dal Baati Churma</h1>
+        <p>The heart of Rajasthan: Hard wheat rolls, spicy lentils, and sweet crumbled wheat</p>
+    </div>
+
+    <div class="res-card" data-open="17" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Chokhi Dhani</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 5:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Tonk Road, Jaipur</div>
+        <div class="info-row">✨ <b>Specialty:</b> A full cultural experience with unlimited Ghee-loaded Baatis.</div>
+        <a href="https://www.google.com/maps/search/Chokhi+Dhani+Jaipur" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Laxmi Mishthan Bhandar (LMB)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Johari Bazar, Pink City</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for their "Royal Rajasthani Thali" and premium Churma.</div>
+        <a href="https://www.google.com/maps/search/LMB+Johari+Bazar+Jaipur" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="6.5" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Rawat Mishthan Bhandar</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:30 AM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Sindhi Camp</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for Pyaaz Kachori, but their Baati is equally legendary.</div>
+        <a href="https://www.google.com/maps/search/Rawat+Misthan+Bhandar+Jaipur" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Santosh Bhojnalaya</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Near Sindhi Camp Bus Stand</div>
+        <div class="info-row">✨ <b>Specialty:</b> The local's secret for affordable, home-style Dal Baati.</div>
+        <a href="https://www.google.com/maps/search/Santosh+Bhojnalaya+Jaipur" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+    <div class="res-card" data-open="10" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Dal Bati Churma (Authentic)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 10:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Bani Park</div>
+        <div class="info-row">✨ <b>Specialty:</b> Dedicated solely to this dish with multiple types of Churma.</div>
+        <a href="https://www.google.com/maps/search/Dal+Bati+Churma+Bani+Park+Jaipur" target="_blank" class="btn-route">📍 View Route</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

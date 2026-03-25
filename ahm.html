@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ahmedabad Food Explorer</title>
+    <style>
+        /* Consistent Theme Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffde7; /* Soft yellow "Dhokla" background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cont {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap; 
+            margin-bottom: 30px;
+        }
+
+        .card {
+            width: 300px;
+            height: 480px; 
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+            background-color: white;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #f1c40f; /* Yellow Border */
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; 
+        }
+
+        .small h1 {
+            font-size: 22px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #27ae60; /* Fresh Gujarati Green */
+        }
+
+        .small p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 10px 15px;
+            text-align: justify;
+            color: #2c3e50;
+            height: 80px; 
+            overflow: hidden;
+        }
+
+        .small button {
+            background-color: #e67e22; /* Saffron/Orange Button */
+            display: block;
+            margin: 10px auto; 
+            color: white;
+            width: 140px;
+            padding: 8px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .small button:hover {
+            background-color: #d35400;
+        }
+
+        .city-header {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="city-header">Vibrant Flavors of Ahmedabad</h1>
+
+    <div class="cont">
+        <div class="card">
+            <img src="dhokla.webp" alt="Khaman Dhokla">
+            <div class="small">
+                <h1>Khaman Dhokla</h1>
+                <p>A soft, fluffy, and savory steamed cake made from gram flour (besan). It is a signature Gujarati snack tempered with mustard seeds and fresh curry leaves.</p>
+               <button onclick="window.location.href='dol.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="fafda_jalebi.webp" alt="Fafda Jalebi">
+            <div class="small">
+                <h1>Fafda Jalebi</h1>
+                <p>The ultimate Gujarati breakfast duo. Crunchy gram-flour strips (fafda) paired with sweet, juicy jalebis and spicy fried chilies—a perfect balance of flavors.</p>
+               <button onclick="window.location.href='jal.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="thepla.webp" alt="Thepla">
+            <div class="small">
+                <h1>Methi Thepla</h1>
+                <p>A healthy and flavorful flatbread made with whole wheat flour, gram flour, and fresh fenugreek leaves. It is a travel-friendly staple loved by all Gujaratis.</p>
+                <button onclick="window.location.href='methi.html'">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="card">
+            <img src="handvo.webp" alt="Handvo">
+            <div class="small">
+                <h1>Handvo</h1>
+                <p>A savory vegetable cake made from a fermented batter of lentils and rice, baked to a crispy golden crust and filled with grated bottle gourd.</p>
+                <button onclick="window.location.href='ha.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="gujarati_thali.jpg" alt="Gujarati Thali">
+            <div class="small">
+                <h1>Gujarati Thali</h1>
+                <p>A massive, colorful platter featuring a balance of sweet, salty, and spicy dishes like Kadhi, Shaak, Rotli, and various savory snacks (farsan).</p>
+               <button onclick="window.location.href='tha.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="locho.jpg" alt="Surti Locho">
+            <div class="small">
+                <h1>Surti Locho</h1>
+                <p>A popular steamed, crumbly snack made from gram flour, topped with plenty of butter, sev, and special Locho masala. It's a melt-in-the-mouth treat.</p>
+               <button onclick="window.location.href='su.html'">View Details</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delhi Food Explorer</title>
+    <style>
+        /* Modernized the background and font for a cleaner look */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container for all cards */
+        .cont {
+            display: flex;
+            flex-wrap: wrap; /* Important: Allows cards to wrap to a new row */
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            width: 300px;
+            height: 480px; /* Slightly increased to fit Delhi descriptions */
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover; /* Ensures images don't look stretched */
+        }
+
+        .small h1 {
+            font-size: 26px;
+            text-align: center;
+            margin: 15px 0 5px 0;
+            color: #b71c1c; /* Crimson Red for Delhi theme */
+        }
+
+        .small p {
+            font-size: 15px;
+            margin: 10px;
+            text-align: justify;
+            color: #444;
+            line-height: 1.4;
+            height: 100px; /* Keeps card heights consistent */
+        }
+
+        .small button {
+            background-color: #b71c1c; /* Delhi Red */
+            color: white;
+            width: 140px;
+            height: 35px;
+            border: none;
+            border-radius: 20px;
+            display: block;
+            margin: 10px auto;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .small button:hover {
+            background-color: #7f0000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; color: #333; margin-bottom: 30px;">Dilli Ka Swad: New Delhi Food Explorer</h1>
+
+    <div class="cont">
+        <div class="card">
+            <img src="chole.jpg" alt="Chole Bhature">
+            <div class="small">
+                <h1>Chole Bhature</h1>
+                <p>Spicy chickpeas served with fluffy, deep-fried bread. A legendary Delhi breakfast staple. Often served with spicy pickles and onions.</p>
+                <button onclick="window.location.href='ch.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="butter.jpg" alt="Butter Chicken">
+            <div class="small">
+                <h1>Butter Chicken</h1>
+                <p>Creamy, tomato-based gravy with tender tandoori chicken. Invented in Delhi, this dish is a global favorite for its rich, velvety texture.</p>
+                <button onclick="window.location.href='bu.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="par.jpg" alt="Parathas">
+            <div class="small">
+                <h1>Parathas</h1>
+                <p>Golden, crispy stuffed flatbreads. From the lanes of Gali Paranthe Wali to modern tables, these are the heart of Delhi's street food.</p>
+                <button onclick="window.location.href='pa.html'">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="card">
+            <img src="goal.jpg" alt="Gol Gappe">
+            <div class="small">
+                <h1>Gol Gappe</h1>
+                <p>Crispy hollow spheres filled with spicy tangy water and potatoes. A burst of flavor in every bite that every Delhiite swears by.</p>
+                <button onclick="window.location.href='go.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="raj.webp" alt="Rajma Chawal">
+            <div class="small">
+                <h1>Rajma Chawal</h1>
+                <p>Comfort in a bowl: Thick kidney bean curry served over steaming basmati rice. The ultimate soul food for any North Indian.</p>
+                <button onclick="window.location.href='raj.html'">View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="keb.webp" alt="Kebabs">
+            <div class="small">
+                <h1>Kebabs</h1>
+                <p>Succulent, smoky meat grilled to perfection over charcoal. From Seekh to Shami, Old Delhi's kebabs are a royal treat for meat lovers.</p>
+                <button onclick="window.location.href='keb.html'">View Details</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

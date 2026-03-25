@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabadi Biryani - Best Restaurants</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header Section - Teal & Spicy Orange Theme */
+        .header {
+            background: linear-gradient(135deg, #006064, #e64a19);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0, 96, 100, 0.2);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #006064;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        /* Restaurant Card */
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .res-name { margin: 0; color: #2c3e50; font-size: 24px; }
+
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 15px; color: #555; margin: 5px 0; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #333; }
+        .info-icon { width: 20px; text-align: center; font-size: 16px; }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-route {
+            background: #00796b;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { background: #004d40; transform: translateY(-2px); }
+
+        .icon { font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-link">← Back to Cities</a>
+    
+    <div class="header">
+        <h1>World Famous Hyderabadi Biryani</h1>
+        <p>Spicy, flavorful "Kacchi Yakhni" Dum Biryani from the land of Nizams</p>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Paradise Biryani (Secunderabad)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> MG Road, Secunderabad</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹600 - ₹800</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> The World's most famous Biryani landmark</div>
+        <div class="button-group">
+            <a href="https://maps.google.com/?q=Paradise+Biryani+Secunderabad" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="23.5">
+        <div class="res-header">
+            <h2 class="res-name">Bawarchi Restaurant</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 12:00 PM - 11:30 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> RTC X Roads, Musheerabad</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹500 - ₹700</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> The "Original" Bawarchi Mutton Biryani</div>
+        <div class="button-group">
+            <a href="https://maps.google.com/?q=Bawarchi+Restaurant+RTC+X+Roads" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="5" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Hotel Shadab</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 5:00 AM - 12:00 AM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Ghansi Bazaar, Near Charminar</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹400 - ₹600</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Authentic Old City Biryani & Paya Nahari</div>
+        <div class="button-group">
+            <a href="https://maps.google.com/?q=Hotel+Shadab+Hyderabad" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Cafe Bahar</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 11:00 AM - 12:00 AM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Basheer Bagh, Hyderabad</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹500 - ₹700</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Rich, masala-heavy Biryani & Haleem (Seasonal)</div>
+        <div class="button-group">
+            <a href="https://maps.google.com/?q=Cafe+Bahar+Hyderabad" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="25">
+        <div class="res-header">
+            <h2 class="res-name">Shah Ghouse</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 12:00 PM - 1:00 AM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Gachibowli / Tolichowki</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹600 - ₹800</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Irani Chai & Late night Biryani cravings</div>
+        <div class="button-group">
+            <a href="https://maps.google.com/?q=Shah+Ghouse+Hyderabad" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function updateHydBiryaniStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        const cards = document.querySelectorAll('.res-card');
+
+        cards.forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            // Handle late night closing (e.g., 1 AM is 25 for the logic)
+            let isCurrentlyOpen = false;
+            if (closeTime > 24) {
+                 isCurrentlyOpen = (currentHour >= openTime || currentHour < (closeTime - 24));
+            } else {
+                 isCurrentlyOpen = (currentHour >= openTime && currentHour < closeTime);
+            }
+
+            if (isCurrentlyOpen) {
+                badge.textContent = "Open Now";
+                badge.classList.remove('closed');
+                badge.classList.add('open');
+            } else {
+                badge.textContent = "Closed Now";
+                badge.classList.remove('open');
+                badge.classList.add('closed');
+            }
+        });
+    }
+
+    window.onload = updateHydBiryaniStatus;
+    setInterval(updateHydBiryaniStatus, 60000);
+</script>
+
+</body>
+</html>

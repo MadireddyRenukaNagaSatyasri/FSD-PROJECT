@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Sandwich Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f1f8e9; /* Refreshing chutney green background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Fresh Veggie & Spicy Chutney Theme */
+        .header {
+            background: linear-gradient(135deg, #2e7d32, #c62828);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+            border-bottom: 5px solid #1b5e20;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #1b5e20;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #c8e6c9;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #1b5e20; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #33691e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #2e7d32; }
+
+        .btn-route {
+            background: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #1b5e20; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="mumbai.html" class="back-link">← Back to Mumbai Explorer</a>
+    
+    <div class="header">
+        <h1>The Bombay Sandwich</h1>
+        <p>Layers of cucumber, potato, tomato, and beetroot with spicy chutney and a mountain of cheese</p>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="26.5">
+        <div class="res-header">
+            <h2 class="res-name">Amar Juice Centre</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 2:30 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Juhu, Mumbai</div>
+        <div class="info-row">✨ <b>Specialty:</b> Their 'Cheese Chilli Grill' is a late-night legend. Perfectly crisp bread with molten cheese and a spicy kick.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Brahmin's+Coffee+Bar+Shankarapura0" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="10" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Raju Sandwich (HR College)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 10:00 AM - 9:00 PM (Closed Sun)</div>
+        <div class="info-row">📍 <b>Location:</b> Churchgate, South Mumbai</div>
+        <div class="info-row">✨ <b>Specialty:</b> The ultimate college snack spot. Famous for their 'Chocolate Sandwich' and the classic loaded veggie toast.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Brahmin's+Coffee+Bar+Shankarapura1" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="9" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Mithibai College Sandwich</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 9:00 AM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Vile Parle West</div>
+        <div class="info-row">✨ <b>Specialty:</b> The 'Ice Cream Sandwich' and massive grill sandwiches that are large enough to feed two people. Always crowded, always fresh.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Brahmin's+Coffee+Bar+Shankarapura2" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Right Place</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Breach Candy, South Mumbai</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for their grilled sandwiches and soft-serve ice cream. Their chutney is known for being exceptionally spicy.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Brahmin's+Coffee+Bar+Shankarapura3" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        const day = now.getDay();
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const name = card.querySelector('.res-name').textContent;
+            const badge = card.querySelector('.status-badge');
+            
+            if (name.includes("Raju") && day === 0) {
+                badge.textContent = "Closed Today (Sun)";
+                badge.className = "status-badge closed";
+                return;
+            }
+
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+
+            let isOpen = false;
+            if (closeTime > 24) {
+                isOpen = (currentHour >= openTime || currentHour < (closeTime - 24));
+            } else {
+                isOpen = (currentHour >= openTime && currentHour < closeTime);
+            }
+
+            if (isOpen) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>
