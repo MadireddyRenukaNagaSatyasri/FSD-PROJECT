@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Food Explorer | Unified Map</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+        body { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+        #map { height: 100vh; width: 100%; background: #ffffff; }
+
+        /* UNIFIED LOLLIPOP PIN */
+        .lollipop-pin {
+            width: 24px;
+            height: 24px;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            background: #E74C3C; /* ALL MARKS IN THIS COLOR */
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .lollipop-pin:hover {
+            transform: rotate(-45deg) scale(1.3);
+            background: #C0392B; /* Slightly darker on hover */
+        }
+
+        /* HIGHLIGHTED CITY LABELS */
+        .leaflet-tooltip-highlighted {
+            background: #ffffff !important;
+            border: 2px solid #E74C3C !important; /* Matches the pin color */
+            border-radius: 8px !important;
+            color: #2d3436 !important;
+            font-size: 13px !important;
+            font-weight: 700 !important;
+            padding: 5px 12px !important;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1) !important;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        const indiaBounds = [[6.5, 68.0], [36.0, 97.5]];
+
+        const map = L.map('map', {
+            maxBounds: indiaBounds,
+            maxBoundsViscosity: 1.0,
+            minZoom: 5
+        }).setView([22.5, 78.9], 5);
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png').addTo(map);
+
+        // List of Famous Food Cities
+        const cities = [
+            { name: "Amritsar", coords: [31.6340, 74.8723], url: "amritsar.html" },
+            { name: "New Delhi", coords: [28.6139, 77.2090], url: "delhi.html" },
+            { name: "Lucknow", coords: [26.8467, 80.9462], url: "lucknow.html" },
+            { name: "Jaipur", coords: [26.9124, 75.7873], url: "jaipur.html" },
+            { name: "Ahmedabad", coords: [23.0225, 72.5714], url: "ahmedabad.html" },
+            { name: "Mumbai", coords: [19.0760, 72.8777], url: "mumbai.html" },
+            { name: "Hyderabad", coords: [17.3850, 78.4867], url: "hyderabad.html" },
+            { name: "Bengaluru", coords: [12.9716, 77.5946], url: "bengaluru.html" },
+            { name: "Kolkata", coords: [22.5726, 88.3639], url: "kolkata.html" },
+            { name: "Chennai", coords: [13.0827, 80.2707], url: "chennai.html" },
+            { name: "Goa", coords: [15.2993, 74.1240], url: "goa.html" }
+        ];
+
+        const icon = L.divIcon({
+            className: 'custom-icon',
+            html: `<div class="lollipop-pin"></div>`,
+            iconSize: [24, 24],
+            iconAnchor: [12, 24]
+        });
+
+        cities.forEach(city => {
+            const marker = L.marker(city.coords, { icon: icon }).addTo(map);
+
+            marker.bindTooltip(city.name, { 
+                permanent: true, 
+                direction: 'top', 
+                offset: [0, -25],
+                className: 'leaflet-tooltip-highlighted'
+            }).openTooltip();
+
+            marker.on('click', () => {
+                window.location.href = city.url;
+            });
+        });
+    </script>
+</body>
+</html>

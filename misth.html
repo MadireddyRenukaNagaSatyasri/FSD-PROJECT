@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolkata Mishti Doi Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7ede2; /* Soft terracotta-cream background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Caramelized Milk & Clay Pot Theme */
+        .header {
+            background: linear-gradient(135deg, #a0522d, #f5deb3);
+            color: #3e2723;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(160, 82, 45, 0.3);
+            border-bottom: 5px solid #5d4037;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #5d4037;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #d7ccc8;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #5d4037; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #4e342e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #a0522d; }
+
+        .btn-route {
+            background: #a0522d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #5d4037; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="kolkata.html" class="back-link">← Back to Kolkata Guide</a>
+    
+    <div class="header">
+        <h1>Kolkata Mishti Doi</h1>
+        <p>Thick, creamy fermented yogurt sweetened with caramelized jaggery or sugar, set in earthen pots</p>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Amrit</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Fariapukur, North Kolkata</div>
+        <div class="info-row">✨ <b>Specialty:</b> Widely regarded as the king of Mishti Doi. It is incredibly thick, almost like fudge, with a rich caramelized top layer.</div>
+        <a href="https://www.google.com/maps/search/Amrit+Sweet+Shop+Kolkata" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Mithai</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Beckbagan, South Kolkata</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for its consistency and perfect level of sweetness. Their Doi is silky smooth and never watery.</div>
+        <a href="https://www.google.com/maps/search/Mithai+Beckbagan+Kolkata" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Balaram Mullick & Radharaman Mullick</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Bhawanipur / Multiple Branches</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for 'Nolen Gur Mishti Doi' (jaggery variant). They balance modern hygiene with traditional flavors perfectly.</div>
+        <a href="https://www.google.com/maps/search/Balaram+Mullick+Kolkata" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Ganguram</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Multiple Branches (Maniktala Original)</div>
+        <div class="info-row">✨ <b>Specialty:</b> A household name across the city. Their small clay pots (bhars) are perfect for a quick individual snack on the go.</div>
+        <a href="https://www.google.com/maps/search/Ganguram+Sweets+Kolkata" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const badge = card.querySelector('.status-badge');
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

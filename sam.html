@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Idli Vada - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f1f8e9; /* Light leaf green background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Banana Leaf Green & Creamy White Theme */
+        .header {
+            background: linear-gradient(135deg, #2e7d32, #81c784);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+            border-bottom: 5px solid #1b5e20;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #c8e6c9;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #1b5e20; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #33691e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #2e7d32; }
+
+        .btn-route {
+            background: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #1b5e20; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="bengaluru.html" class="back-link">← Back to Bengaluru Explorer</a>
+    
+    <div class="header">
+        <h1>Bengaluru Idli Vada</h1>
+        <p>Soft steamed rice cakes paired with crunchy pepper vadas and spicy coconut chutney</p>
+    </div>
+
+    <div class="res-card" data-open="6" data-close="12">
+        <div class="res-header">
+            <h2 class="res-name">Brahmin's Coffee Bar</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:00 AM - 12:00 PM, 3:00 PM - 7:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Shankarapura</div>
+        <div class="info-row">✨ <b>Specialty:</b> The holy grail of Idli Vada. No sambar here—just their legendary watery coconut chutney.</div>
+        <a href="https://www.google.com/maps/search/Brahmins+Coffee+Bar+Shankarapura+Bengaluru" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="6.5" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Veena Stores</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:30 AM - 12:00 PM, 4:00 PM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Malleshwaram</div>
+        <div class="info-row">✨ <b>Specialty:</b> Incredibly soft idlis. People stand on the pavement just to get a plate of their Vada-Sambar.</div>
+        <a href="https://www.google.com/maps/search/Veena+Stores+Malleshwaram+Bengaluru" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Taaza Thindi</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 12:30 PM, 4:30 PM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Jayanagar</div>
+        <div class="info-row">✨ <b>Specialty:</b> High quality at low prices. Their vadas are famous for being ultra-crispy and less oily.</div>
+        <a href="https://www.google.com/maps/search/Taaza+Thindi+Jayanagar+Bengaluru" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">SLV Refreshments</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Banashankari</div>
+        <div class="info-row">✨ <b>Specialty:</b> Authentic South Bengaluru taste. Their sambar has the perfect hint of jaggery and spice.</div>
+        <a href="https://www.google.com/maps/search/SLV+Refreshments+Banashankari+Bengaluru" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

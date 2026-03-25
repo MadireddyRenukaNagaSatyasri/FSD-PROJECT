@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Xacuti Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fbe9e7; /* Warm earthy background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Roasted Coconut & Deep Spice Theme */
+        .header {
+            background: linear-gradient(135deg, #5d4037, #d84315);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(93, 64, 55, 0.3);
+            border-bottom: 5px solid #3e2723;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #5d4037;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffccbc;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #3e2723; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #4e342e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #bf360c; }
+
+        .btn-route {
+            background: #d84315;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #3e2723; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="goa.html" class="back-link">← Back to Goa Guide</a>
+    
+    <div class="header">
+        <h1>Goan Xacuti Special</h1>
+        <p>A complex masterpiece of 20+ spices and slow-roasted coconut</p>
+    </div>
+
+    <div class="res-card" data-open="11.5" data-close="15.5" data-open2="19" data-close2="23">
+        <div class="res-header">
+            <h2 class="res-name">Anandashram</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:30 AM - 3:30 PM, 7:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Fontainhas, Panaji</div>
+        <div class="info-row">✨ <b>Specialty:</b> One of Panaji's oldest eateries. Their Chicken Xacuti is legendary for its deep, dark, roasted flavor and is incredibly pocket-friendly.</div>
+        <a href="https://www.google.com/maps/search/Taaza+Thindi+Jayanagar+Bengaluru5" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Star Light</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Assolna, South Goa</div>
+        <div class="info-row">✨ <b>Specialty:</b> A riverside gem. Known for its Crab Xacuti—the richness of the coconut gravy combined with fresh river crabs is a Goan rite of passage.</div>
+        <a href="https://www.google.com/maps/search/Taaza+Thindi+Jayanagar+Bengaluru6" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="15.5" data-open2="19" data-close2="23">
+        <div class="res-header">
+            <h2 class="res-name">Copperleaf</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 3:30 PM, 7:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Porvorim / Panaji</div>
+        <div class="info-row">✨ <b>Specialty:</b> High-quality preparation with a focus on hygiene. Their Mutton Xacuti is tender and carries the perfect aromatic punch of poppy seeds and star anise.</div>
+        <a href="https://www.google.com/maps/search/Taaza+Thindi+Jayanagar+Bengaluru7" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="18.5" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Bhatti Village</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 6:30 PM - 11:00 PM (Dinner Only)</div>
+        <div class="info-row">📍 <b>Location:</b> Nerul, North Goa</div>
+        <div class="info-row">✨ <b>Specialty:</b> A cozy family-run place with no fixed menu. Ask for the Xacuti of the day—it’s home-cooked, rustic, and as authentic as it gets.</div>
+        <a href="https://www.google.com/maps/search/Taaza+Thindi+Jayanagar+Bengaluru8" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const badge = card.querySelector('.status-badge');
+            
+            const open1 = parseFloat(card.getAttribute('data-open'));
+            const close1 = parseFloat(card.getAttribute('data-close'));
+            const open2 = parseFloat(card.getAttribute('data-open2')) || -1;
+            const close2 = parseFloat(card.getAttribute('data-close2')) || -1;
+
+            const isOpen = (currentHour >= open1 && currentHour < close1) || 
+                           (currentHour >= open2 && currentHour < close2);
+
+            if (isOpen) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

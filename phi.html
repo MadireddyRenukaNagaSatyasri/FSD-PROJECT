@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritsari Sarson Da Saag - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fbe7; /* Pale lime/mustard background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Mustard Green & Corn Gold Theme */
+        .header {
+            background: linear-gradient(135deg, #33691e, #fbc02d);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(51, 105, 30, 0.2);
+            border-bottom: 5px solid #1b5e20;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #33691e;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #dcedc8;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #1b5e20; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #33691e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #fbc02d; text-shadow: 0.5px 0.5px #1b5e20; }
+
+        .btn-route {
+            background: #558b2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #2e7d32; 
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="amritsar.html" class="back-link">← Back to Amritsar Explorer</a>
+    
+    <div class="header">
+        <h1>Authentic Sarson Da Saag</h1>
+        <p>Slow-cooked mustard greens tempered with garlic, ginger, and loads of white butter</p>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Kesar Da Dhaba</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Near Town Hall, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Their winter thali with Saag and Makki di Roti is legendary for its richness.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Wengers+Connaught+Place7" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Bharawan Da Dhaba</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Town Hall, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> A great family spot to enjoy authentic Saag with dollops of fresh Makhan.</div>
+        <a href="https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21sT1ZVTnNla3BzZFc5dFpUWnRlRWQwU1d4aFQwRRAB!2m1!1s0x396db5e165469f4d:0xd4dba5eda48e058f" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="23.5">
+        <div class="res-header">
+            <h2 class="res-name">Brother's Dhaba</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 11:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Near Golden Temple Area</div>
+        <div class="info-row">✨ <b>Specialty:</b> Consistently high quality and traditional flavor, perfect for winter visitors.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=...0" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="10.5" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Sadda Pind</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 10:30 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Main Bypass Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> Provides a village-style experience with Saag cooked on a clay 'Chulha'.</div>
+        <a href="https://maps.google.com/?cid=8737085405106637349&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ28" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

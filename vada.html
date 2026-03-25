@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Vada Pav Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffde7; /* Light cutting-chai yellow background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Golden Vada & Spicy Thecha Theme */
+        .header {
+            background: linear-gradient(135deg, #ff8f00, #f44336);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(255, 143, 0, 0.3);
+            border-bottom: 5px solid #e65100;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #bf360c;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe082;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #d84315; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #d84315; }
+
+        .btn-route {
+            background: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #b71c1c; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="mumbai.html" class="back-link">← Back to Mumbai Explorer</a>
+    
+    <div class="header">
+        <h1>Mumbai Vada Pav</h1>
+        <p>The "Bombay Burger"—spiced potato fritters inside a soft bun with fiery dry garlic chutney</p>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Ashok Vada Pav (Kirti College)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 9:30 PM (Closed Sun)</div>
+        <div class="info-row">📍 <b>Location:</b> Kashinath Dhuru Marg, Dadar West</div>
+        <div class="info-row">✨ <b>Specialty:</b> The gold standard. Famous for the 'choora' (crunchy bits) they add inside the pav. A favorite of Bollywood stars.</div>
+        <a href="https://maps.google.com/?q=Ashok+Vada+Pav+Dadar" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7.5" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Gajanan Vada Pav</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:30 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Vishnu Nagar, Thane West</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for their unique, secret-recipe yellow chutney (a mix of besan and chillies) instead of the usual dry red one.</div>
+        <a href="https://maps.google.com/?q=Gajanan+Vada+Pav+Thane" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Graduate Vada Pav</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Outside Byculla Station (East)</div>
+        <div class="info-row">✨ <b>Specialty:</b> A high-speed stall serving thousands daily. Known for its spicy garlic chutney and perfectly round, piping hot vadas.</div>
+        <a href="https://maps.google.com/?q=Graduate+Vada+Pav+Byculla" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8.5" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Aaram Vada Pav</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:30 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Opposite CST Station, South Mumbai</div>
+        <div class="info-row">✨ <b>Specialty:</b> Located in a heritage building. Their vadas are larger than average and the fried green chillies they serve are legendary.</div>
+        <a href="https://maps.google.com/?q=Aaram+Vada+Pav+CST" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        const day = now.getDay(); // 0 is Sunday
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const name = card.querySelector('.res-name').textContent;
+            const badge = card.querySelector('.status-badge');
+            
+            // Weekly Closure Logic
+            if (name.includes("Ashok") && day === 0) {
+                badge.textContent = "Closed Today (Sun)";
+                badge.className = "status-badge closed";
+                return;
+            }
+
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

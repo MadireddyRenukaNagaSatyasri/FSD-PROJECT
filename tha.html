@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmedabad Gujarati Thali Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff9f0; /* Creamy Basundi background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Traditional Copper & Saffron Theme */
+        .header {
+            background: linear-gradient(135deg, #b87333, #ff9800);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(184, 115, 51, 0.3);
+            border-bottom: 5px solid #8d4f1d;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #8d4f1d;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe0b2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #8d4f1d; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #e65100; }
+
+        .btn-route {
+            background: #b87333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #8d4f1d; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="ahmedabad.html" class="back-link">← Back to Ahmedabad Guide</a>
+    
+    <div class="header">
+        <h1>The Gujarati Thali</h1>
+        <p>A limitless feast of farsan, shaak, dal-kadhi, rotli, and desserts—hospitality on a plate</p>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="15.5" data-open2="19" data-close2="23">
+        <div class="res-header">
+            <h2 class="res-name">Agashiye</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 3:30 PM, 7:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> House of MG, Lal Darwaja</div>
+        <div class="info-row">✨ <b>Specialty:</b> The crown jewel of Ahmedabad. Set on a heritage rooftop, the menu changes daily and the service is truly royal.</div>
+        <a href="https://maps.google.com/?q=Vinayak+Family+Restaurant+Assagao4" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="15" data-open2="19" data-close2="23">
+        <div class="res-header">
+            <h2 class="res-name">Vishalla</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 3:00 PM, 7:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Vasna, Ahmedabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> A village-themed restaurant where you sit on the floor (patla) and eat under the stars. Famous for their smoky Bajra Rotla and garlic chutney.</div>
+        <a href="https://maps.google.com/?q=Vinayak+Family+Restaurant+Assagao5" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11.5" data-close="15.5" data-open2="19" data-close2="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Gordhan Thal</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:30 AM - 3:30 PM, 7:00 PM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> S.G. Highway / Satellite</div>
+        <div class="info-row">✨ <b>Specialty:</b> A local favorite for celebrations. They are known for their massive variety of 'Farsan' (snacks) and incredible 'Aamras' during mango season.</div>
+        <a href="https://maps.google.com/?q=Vinayak+Family+Restaurant+Assagao6" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="21">
+        <div class="res-header">
+            <h2 class="res-name">Chandravilas</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 9:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Gandhi Road, Old City</div>
+        <div class="info-row">✨ <b>Specialty:</b> The oldest thali spot in the city (120+ years). Simple, authentic, and carries the historic soul of Ahmedabad.</div>
+        <a href="https://maps.google.com/?q=Vinayak+Family+Restaurant+Assagao7" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const badge = card.querySelector('.status-badge');
+            
+            const open1 = parseFloat(card.getAttribute('data-open'));
+            const close1 = parseFloat(card.getAttribute('data-close'));
+            const open2 = parseFloat(card.getAttribute('data-open2')) || -1;
+            const close2 = parseFloat(card.getAttribute('data-close2')) || -1;
+
+            const isOpen = (currentHour >= open1 && currentHour < close1) || 
+                           (currentHour >= open2 && currentHour < close2);
+
+            if (isOpen) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

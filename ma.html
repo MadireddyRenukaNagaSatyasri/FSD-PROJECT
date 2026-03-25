@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Food Explorer | Premium Map</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        body { margin: 0; padding: 0; background: #0b0d17; font-family: 'Poppins', sans-serif; }
+        #map { height: 100vh; width: 100%; background: #0b0d17 !important; }
+
+        /* Glowing Lollipop Marker */
+        .lollipop-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lollipop-head {
+            width: 18px;
+            height: 18px;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            border: 2px solid white;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
+            100% { box-shadow: 0 0 0 0px rgba(255, 255, 255, 0); }
+        }
+
+        /* Tooltip styling */
+        .leaflet-tooltip-own {
+            background: rgba(0, 0, 0, 0.8) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            color: white !important;
+            font-weight: 600;
+            border-radius: 20px !important;
+            padding: 5px 15px !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Bounds for India
+        const indiaBounds = [[6.5, 68.1], [35.7, 97.4]];
+
+        const map = L.map('map', {
+            maxBounds: indiaBounds,
+            maxBoundsViscosity: 1.0,
+            zoomControl: false,
+            minZoom: 5
+        }).setView([22.5, 78.9], 5);
+
+        // Attractive Dark/Colorful Tiles
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '© CartoDB'
+        }).addTo(map);
+
+        // Expanded Cities Data
+        const cities = [
+            { name: "Amritsar", coords: [31.6340, 74.8723], color: "#FFD700", url: "amritsar.html" }, // Golden/Kulcha
+            { name: "Lucknow", coords: [26.8467, 80.9462], color: "#FFA500", url: "lucknow.html" },  // Kebab
+            { name: "New Delhi", coords: [28.6139, 77.2090], color: "#FF4757", url: "delhi.html" },
+            { name: "Jaipur", coords: [26.9124, 75.7873], color: "#FF69B4", url: "jaipur.html" },
+            { name: "Ahmedabad", coords: [23.0225, 72.5714], color: "#2ECC71", url: "ahmedabad.html" },
+            { name: "Mumbai", coords: [19.0760, 72.8777], color: "#1E90FF", url: "mumbai.html" },
+            { name: "Hyderabad", coords: [17.3850, 78.4867], color: "#9B59B6", url: "hyderabad.html" },
+            { name: "Bengaluru", coords: [12.9716, 77.5946], color: "#00D2D3", url: "bengaluru.html" },
+            { name: "Chennai", coords: [13.0827, 80.2707], color: "#F1C40F", url: "chennai.html" },
+            { name: "Kolkata", coords: [22.5726, 88.3639], color: "#E67E22", url: "kolkata.html" },
+            { name: "Goa", coords: [15.2993, 74.1240], color: "#00CEC9", url: "goa.html" }
+        ];
+
+        cities.forEach(city => {
+            const icon = L.divIcon({
+                className: 'custom-div-icon',
+                html: `<div class="lollipop-container">
+                         <div class="lollipop-head" style="background: ${city.color}; box-shadow: 0 0 15px ${city.color};"></div>
+                       </div>`,
+                iconSize: [20, 20],
+                iconAnchor: [10, 20]
+            });
+
+            const marker = L.marker(city.coords, { icon: icon }).addTo(map);
+
+            marker.bindTooltip(city.name, { 
+                className: 'leaflet-tooltip-own',
+                direction: 'top',
+                offset: [0, -15]
+            });
+
+            marker.on('click', () => {
+                window.location.href = city.url;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritsari Dal Makhani - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Velvet Black & Butter Gold Theme */
+        .header {
+            background: linear-gradient(135deg, #212121, #795548);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-bottom: 5px solid #ffb300;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #5d4037;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #efebe9;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #3e2723; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #4e342e; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #8d6e63; }
+
+        .btn-route {
+            background: #212121;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+            border: 1px solid #ffb300;
+        }
+        .btn-route:hover { 
+            background: #ffb300; 
+            color: #212121;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="amritsar.html" class="back-link">← Back to Amritsar Explorer</a>
+    
+    <div class="header">
+        <h1>Legendary Dal Makhani</h1>
+        <p>Slow-cooked black lentils finished with fresh cream and white butter</p>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Kesar Da Dhaba</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Town Hall, Amritsar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Their iconic Dal is slow-cooked for over 12 hours. Pure Desi Ghee preparation.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Wengers+Connaught+Place7" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7" data-close="24">
+        <div class="res-header">
+            <h2 class="res-name">Bharawan Da Dhaba</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:00 AM - 12:00 AM</div>
+        <div class="info-row">📍 <b>Location:</b> Near Town Hall</div>
+        <div class="info-row">✨ <b>Specialty:</b> A more accessible spot for tourists with a massive following and rich Dal.</div>
+        <a href="https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21sT1ZVTnNla3BzZFc5dFpUWnRlRWQwU1d4aFQwRRAB!2m1!1s0x396db5e165469f4d:0xd4dba5eda48e058f" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="12.5" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Beera Chicken House</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:30 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Majitha Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> Though famous for chicken, their slow-cooked Dal is a sleeper hit.</div>
+        <a href="https://www.google.com/maps/contrib/113748240833483106311/reviews" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="23.5">
+        <div class="res-header">
+            <h2 class="res-name">Brother's Dhaba</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 11:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Town Hall Area</div>
+        <div class="info-row">✨ <b>Specialty:</b> Famous for the Special Amritsari Thali which features their creamy Dal.</div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=...0" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        document.querySelectorAll('.res-card').forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

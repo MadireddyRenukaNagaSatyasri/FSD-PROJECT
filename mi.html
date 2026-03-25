@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Misal Pav Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffaf0; /* Warm flour-like background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Spicy Rassa & Crunchy Farsan Theme */
+        .header {
+            background: linear-gradient(135deg, #e64a19, #ffa000);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(230, 74, 25, 0.3);
+            border-bottom: 5px solid #bf360c;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #d84315;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe0b2;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #bf360c; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #5d4037; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #d84315; }
+
+        .btn-route {
+            background: #d84315;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #bf360c; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="mumbai.html" class="back-link">← Back to Mumbai Explorer</a>
+    
+    <div class="header">
+        <h1>Mumbai Misal Pav</h1>
+        <p>A spicy sprout curry topped with farsan, onions, and lemon, served with buttery pav</p>
+    </div>
+
+    <div class="res-card" data-open="7.5" data-close="21.5">
+        <div class="res-header">
+            <h2 class="res-name">Mamledar Misal</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:30 AM - 9:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Thane (Original) / Multiple Branches</div>
+        <div class="info-row">✨ <b>Specialty:</b> Known for its extreme spice levels. They offer 'Medium', 'Teekha', and 'Double Teekha'. Not for the faint-hearted!</div>
+        <a href="https://www.google.com/maps/search/Mamledar+Misal+Thane" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="10" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Aaswad Upahar & Mithai</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 10:00 AM - 10:30 PM (Closed Mon)</div>
+        <div class="info-row">📍 <b>Location:</b> Shivaji Park, Dadar</div>
+        <div class="info-row">✨ <b>Specialty:</b> Once voted as the world's best vegetarian snack. Their Misal is perfectly balanced and traditionally Maharashtrian.</div>
+        <a href="https://www.google.com/maps/search/Aaswad+Dadar+Mumbai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Vinay Health Home</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 10:00 PM (Closed Sun)</div>
+        <div class="info-row">📍 <b>Location:</b> Thakurdwar, Charni Road</div>
+        <div class="info-row">✨ <b>Specialty:</b> A legendary institution. Their Misal is slightly sweet and spicy, served with fresh, thick curd if you need to cool down.</div>
+        <a href="https://www.google.com/maps/search/Vinay+Health+Home+Mumbai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="7.5" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Ladu Samrat</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 7:30 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Lalbaug, Parel</div>
+        <div class="info-row">✨ <b>Specialty:</b> Authentic taste of Parel. Their Misal has a rich, oily 'Tarri' that is full of flavor and traditional spices.</div>
+        <a href="https://www.google.com/maps/search/Ladu+Samrat+Lalbaug+Mumbai" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        const day = now.getDay();
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const name = card.querySelector('.res-name').textContent;
+            const badge = card.querySelector('.status-badge');
+            
+            // Weekly Closure Logic
+            if (name.includes("Aaswad") && day === 1) { // Monday
+                badge.textContent = "Closed Today (Mon)";
+                badge.className = "status-badge closed";
+                return;
+            }
+            if (name.includes("Vinay") && day === 0) { // Sunday
+                badge.textContent = "Closed Today (Sun)";
+                badge.className = "status-badge closed";
+                return;
+            }
+
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucknowi Sheermal - Best Outlets</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffdf5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header Section - Saffron/Zaffran Theme */
+        .header {
+            background: linear-gradient(135deg, #e67e22, #f39c12);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(230, 126, 34, 0.2);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #d35400;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        /* Restaurant Card */
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .res-name { margin: 0; color: #2c3e50; font-size: 24px; }
+
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 15px; color: #555; margin: 5px 0; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #333; }
+        .info-icon { width: 20px; text-align: center; font-size: 16px; }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-route {
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { background: #2980b9; transform: translateY(-2px); }
+
+        .icon { font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="luck.html" class="back-link">← Back to Dishes</a>
+    
+    <div class="header">
+        <h1>Exquisite Lucknowi Sheermal</h1>
+        <p>Soft, saffron-infused traditional flatbread baked in a tandoor with milk and ghee</p>
+    </div>
+
+    <div class="res-card" data-open="9" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Ali Hussain Sheermal</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 9:00 AM - 10:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Nakhas, Chowk, Lucknow</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹100 - ₹200</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> The 180-year-old shop; famous for "Zafrani Sheermal"</div>
+        <div class="button-group">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Prakash+Kulfi+Aminabad" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Tunday Kababi (Aminabad)</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 11:00 AM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Aminabad, Lucknow</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹300 - ₹500 (with Kebabs)</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Classic pairing of Sheermal with Galouti Kebab</div>
+        <div class="button-group">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Tunday+Kababi+Aminabad+Lucknow" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="23">
+        <div class="res-header">
+            <h2 class="res-name">Rahim's Kulcha-Nihari</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row"><span class="info-icon">🕒</span> <b>Timings:</b> 8:00 AM - 11:00 PM</div>
+        <div class="info-row"><span class="info-icon">📍</span> <b>Location:</b> Akbari Gate, Chowk</div>
+        <div class="info-row"><span class="info-icon">💰</span> <b>Cost for Two:</b> ₹200 - ₹400</div>
+        <div class="info-row"><span class="info-icon">✨</span> <b>Specialty:</b> Exceptional Sheermal paired with Nihari</div>
+        <div class="button-group">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Radhey+Lal+Sweets+Lucknow" target="_blank" class="btn btn-route">
+                <span class="icon">📍</span> Show Route
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function updateSheermalStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+        
+        const cards = document.querySelectorAll('.res-card');
+
+        cards.forEach(card => {
+            const openTime = parseFloat(card.getAttribute('data-open'));
+            const closeTime = parseFloat(card.getAttribute('data-close'));
+            const badge = card.querySelector('.status-badge');
+
+            if (currentHour >= openTime && currentHour < closeTime) {
+                badge.textContent = "Open Now";
+                badge.classList.remove('closed');
+                badge.classList.add('open');
+            } else {
+                badge.textContent = "Closed Now";
+                badge.classList.remove('open');
+                badge.classList.add('closed');
+            }
+        });
+    }
+
+    window.onload = updateSheermalStatus;
+    setInterval(updateSheermalStatus, 60000);
+</script>
+
+</body>
+</html>

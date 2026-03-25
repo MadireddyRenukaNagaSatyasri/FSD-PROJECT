@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmedabad Methi Thepla Explorer - Best Spots</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f1f8e9; /* Soft herbal green background */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 900px; margin: auto; }
+
+        /* Header - Fresh Methi & Toasted Flour Theme */
+        .header {
+            background: linear-gradient(135deg, #558b2f, #fdd835);
+            color: #1b5e20;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(85, 139, 47, 0.3);
+            border-bottom: 5px solid #33691e;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #33691e;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+
+        .res-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #dcedc8;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .res-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .res-name { margin: 0; color: #2e7d32; font-size: 22px; }
+
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .open { background: #e8f5e9; color: #2e7d32; }
+        .closed { background: #ffebee; color: #c62828; }
+
+        .info-row { font-size: 14px; color: #3e2723; display: flex; align-items: center; gap: 10px; }
+        .info-row b { color: #558b2f; }
+
+        .btn-route {
+            background: #689f38;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .btn-route:hover { 
+            background: #33691e; 
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="ahmedabad.html" class="back-link">← Back to Ahmedabad Guide</a>
+    
+    <div class="header">
+        <h1>Methi Thepla Special</h1>
+        <p>Spiced whole wheat flatbreads with fresh fenugreek leaves—the perfect companion for curd and Chundo</p>
+    </div>
+
+    <div class="res-card" data-open="9" data-close="20.5">
+        <div class="res-header">
+            <h2 class="res-name">Induben Khakhrawala</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 9:00 AM - 8:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Mithakhali, Ahmedabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> The ultimate destination for 'travel-friendly' Theplas. They stay soft for days and are packed with the perfect punch of ginger-garlic-chili paste.</div>
+        <a href="https://www.google.com/maps/search/Induben+Khakhrawala+Mithakhali+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="11" data-close="22.5">
+        <div class="res-header">
+            <h2 class="res-name">Swati Snacks</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 11:00 AM - 10:30 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Law Garden, Ahmedabad</div>
+        <div class="info-row">✨ <b>Specialty:</b> High-quality, homely taste. Their Methi Thepla served with potato subji and sweet mango pickle (Chundo) is a fine-dining take on a rustic favorite.</div>
+        <a href="https://www.google.com/maps/search/Swati+Snacks+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="12" data-close="15" data-open2="19" data-close2="23">
+        <div class="res-header">
+            <h2 class="res-name">Agashiye</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 12:00 PM - 3:00 PM, 7:00 PM - 11:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Lal Darwaja (House of MG)</div>
+        <div class="info-row">✨ <b>Specialty:</b> Part of their legendary heritage Thali. These are handmade by local women and taste exactly like the Theplas made in a traditional Gujarati household.</div>
+        <a href="https://www.google.com/maps/search/Agashiye+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+    <div class="res-card" data-open="8" data-close="22">
+        <div class="res-header">
+            <h2 class="res-name">Gwalia Sweets</h2>
+            <span class="status-badge">Checking...</span>
+        </div>
+        <div class="info-row">🕒 <b>Timings:</b> 8:00 AM - 10:00 PM</div>
+        <div class="info-row">📍 <b>Location:</b> Satellite / Multiple Branches</div>
+        <div class="info-row">✨ <b>Specialty:</b> Perfect for a quick breakfast. Their Theplas are thin, soft, and come conveniently packed with a side of spicy pickle.</div>
+        <a href="https://www.google.com/maps/search/Gwalia+Sweets+Ahmedabad" target="_blank" class="btn-route">📍 View on Map</a>
+    </div>
+
+</div>
+
+<script>
+    function updateStatus() {
+        const now = new Date();
+        const currentHour = now.getHours() + (now.getMinutes() / 60);
+
+        document.querySelectorAll('.res-card').forEach(card => {
+            const badge = card.querySelector('.status-badge');
+            
+            const open1 = parseFloat(card.getAttribute('data-open'));
+            const close1 = parseFloat(card.getAttribute('data-close'));
+            const open2 = parseFloat(card.getAttribute('data-open2')) || -1;
+            const close2 = parseFloat(card.getAttribute('data-close2')) || -1;
+
+            const isOpen = (currentHour >= open1 && currentHour < close1) || 
+                           (currentHour >= open2 && currentHour < close2);
+
+            if (isOpen) {
+                badge.textContent = "Open Now";
+                badge.className = "status-badge open";
+            } else {
+                badge.textContent = "Closed Now";
+                badge.className = "status-badge closed";
+            }
+        });
+    }
+    window.onload = updateStatus;
+    setInterval(updateStatus, 60000);
+</script>
+
+</body>
+</html>
