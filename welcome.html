@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BiteMap | Your Culinary Journey Begins</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Cinematic Background Video or Image Placeholder */
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)),
+                        url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            filter: scale(1.1);
+            animation: panBG 20s infinite alternate;
+        }
+
+        @keyframes panBG {
+            from { transform: scale(1); }
+            to { transform: scale(1.15); }
+        }
+
+        .welcome-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .logo-area {
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .logo-text {
+            font-size: 5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            background: linear-gradient(45deg, #ff8f00, #ffcc80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+
+        /* Glassmorphism Card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 30px;
+            max-width: 500px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .glass-card p {
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        /* Pulse Button */
+        .cta-btn {
+            display: inline-block;
+            background: #ff8f00;
+            color: #fff;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(255, 143, 0, 0.5);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background: #ffb300;
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(255, 143, 0, 0.8);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Floating spices icons for flavor */
+        .floating-element {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.5;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <div class="floating-element" style="top: 20%; left: 15%; animation-delay: 0s;">🌶️</div>
+    <div class="floating-element" style="top: 70%; left: 80%; animation-delay: 2s;">🥟</div>
+    <div class="floating-element" style="top: 40%; left: 85%; animation-delay: 4s;">🥘</div>
+
+    <div class="welcome-container">
+        <div class="logo-area">
+            <h1 class="logo-text">Flavours of India</h1>
+            <p class="tagline">The Soul of the Streets</p>
+        </div>
+
+        <div class="glass-card">
+            <p>Every city has a heartbeat, and every heartbeat has a flavor. Discover the legendary heritage spots that define India's culinary map, with real-time availability at your fingertips.</p>
+            
+            <a href="map.html" class="cta-btn">Start Exploring</a>
+        </div>
+    </div>
+
+</body>
+</html>
